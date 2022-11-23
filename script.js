@@ -20,3 +20,8 @@ const renderCard = (pokemonArray) => {
 };
 
 renderCard(pokemonArray);
+
+//const changeCard = () => {
+// const changeCardS = document.querySelector("card-container");
+//changeCardS.background - color("$color-foreground");
+//};
