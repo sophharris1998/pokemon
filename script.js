@@ -2,14 +2,16 @@ import { pokemonArray } from "./data/pokemon.js";
 
 const mainContent = document.querySelector(".card-container");
 
-const renderCard = (pokemon) => {
+const renderCard = (pokemonArray) => {
   let htmlString = "";
 
   pokemonArray.forEach((pokemon) => {
     console.log(pokemon);
     htmlString += ` 
     <section>
-      <img> src="${pokemon.sprite}"</img>
+    <img src="${pokemon.sprite}" >
+      <h1> ${pokemon.name} </h1>
+      <p> ${pokemon.types} </p>
     </section>
     `;
   });
